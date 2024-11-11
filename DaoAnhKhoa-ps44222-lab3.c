@@ -48,20 +48,40 @@ int main(void)
         }
     }
     break;
-    case 2:
-        printf("Dap an ban chon sai nua.");
+    case 2:{
+        printf("Chuong trinh giai phuong trinh bac 1 :");
+    float a, b, x;
+    printf("Nhap he so a: ");
+    scanf("%f", &a);
+    printf("Nhap he so b: ");
+    scanf("%f", &b);
+    if (a == 0) {
+        if (b == 0) {
+            printf("Phuong trinh vo so nghiem.\n");
+        } else {
+            printf("Phuong trinh vo nghiem.\n");
+        }
+    } else {
+        // Tính nghiệm x
+        x = -b / a;
+        printf("Nghiem cua phuong trinh la: x = %.2f\n", x);
+    } 
+    }
         break;
-    case 3:
-        printf("Dap an ban chon la dungr");
+    case 3:{
+        printf("Chuong trinh giai phuong trinh bac 2");
+    }   
         break;
-    case 4:
+    case 4:{
         printf("Dap an ban chon da sai");
+    }
+        
         break;
     case 0:
         printf("See You Again");
         exit(0);
     default:
-        printf("Vui long nhap lai dap an");
+        printf("Vui long chon lai lua chon co san");
         break;
     }
     return 0;
