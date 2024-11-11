@@ -2,7 +2,7 @@
 triple:          'x86_64-apple-darwin'
 binary-path:     '/Volumes/study/studying/study/DaoAnhKhoa-ps44222-lab3'
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000035B0, symSize: 0x5D0 }
-  - { offsetInCU: 0x2E3, offset: 0x2E3, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000035B0, symSize: 0x5D0 }
-  - { offsetInCU: 0x3CF, offset: 0x3CF, size: 0x8, addend: 0x0, symName: __Z4sqrtB7v160006f, symObjAddr: 0x5D0, symBinAddr: 0x100003B80, symSize: 0x14 }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003260, symSize: 0x800 }
+  - { offsetInCU: 0x2DC, offset: 0x2DC, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003260, symSize: 0x800 }
+  - { offsetInCU: 0x43D, offset: 0x43D, size: 0x8, addend: 0x0, symName: __Z4sqrtB7v160006f, symObjAddr: 0x800, symBinAddr: 0x100003A60, symSize: 0x14 }
 ...

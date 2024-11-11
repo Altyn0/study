@@ -128,9 +128,45 @@ int main(void)
     case 4:
     {
         printf("Chuong trinh xay dung tinh tien dien");
-        
+        float kwh, tiendien=0;
+        printf("\nNhap so dien tieu thu cua ban");
+        scanf("%f",&kwh);   
+        if (kwh<=50)
+        {
+            tiendien=kwh*1678;
+        }else if (kwh <= 100)
+        {
+         tiendien=50*1678+(kwh-50)*1734;   
+        }else if (kwh<=200)
+        {
+         tiendien=50*1678+50*1734+(kwh-100)*2014;   
+        }
+        else if (kwh<=300)
+        {
+         tiendien=50*1678+50*1734+100*2014+(kwh-200)*2536;   
+        }
+        else if (kwh<=400)
+        {
+         tiendien=50*1678+50*1734+100*2014+100*2536+(kwh-300)*2834;   
+        }
+        else{
+            tiendien=50*1678+50*1734+100*2014+100*2536+100*2834+(kwh-400)*2927; 
+             }
+        printf("So tien dien ban can phai tra la : %.2f",tiendien);    
     }
-
+    
+    break;
+    case 5:
+    {
+        printf("chuong trinh tinh chu vi dien  tich hinh chu nhat");
+        float canh,chuVi=0,dienTich=0;
+        printf("Vui long nhap canh ");
+        scanf("%f",&canh);
+        chuVi=4*canh;
+        printf("Chu vi hinh vuong la : %.2f\n",chuVi);
+        dienTich=canh*canh;
+        printf("Dien tich hinh vuong la : %.2f\n",dienTich);
+    }
     break;
     case 0:
         printf("See You Again");
@@ -139,5 +175,5 @@ int main(void)
         printf("Vui long chon lai lua chon co san");
         break;
     }
-    return 0;
-}
+   return 0; 
+   }
