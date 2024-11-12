@@ -1,65 +1,71 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
     int menu;
-    printf("xin chao cac ban den voi ass 1:\n");
-    printf("1. Chuc nang tim tinh nguyen cua mot so\n");
-    printf("2. Chuc nang tim UCLN va BCNN\n");
-    printf("3. Chuc nang tinh tien Karaoke\n");
+    printf("xin hay lua chon cac chuc nang tuong ung ma ban muon thuc hien 1:\n");
+    printf("1. Chuc nang kiem tra so nguyen \n");
+    printf("2. Chuc nang tim uoc so chung va boi so chung cua 2 so N\n");
+    printf("3. Chuc nang tinh tien cho quan Karaoke\n");
     printf("4. Chuc nang tinh tien dien\n");
     printf("5. Chuc nang doi tien \n");
     printf("6. Chuc nang tinh lai suat vay ngan hang tra gop\n");
     printf("7. Chuc nang vay tien mua xe\n");
     printf("8. Chuc nang sap xep thong tin sinh vien\n");
     printf("9. Chuc nang xay dung game FPOLY-LOTT\n");
-    printf("10. Chuc nang xay dung truong trinh tinh toan phan so\n");
+    printf("10. Chuc nang xay dung chuong trinh tinh toan phan so\n");
     printf("vui long nhap vao chuc nang:");
-
-
     scanf("%d", &menu);
-    if(menu == 1)
+    switch (menu)
     {
-        printf("1. Chuc nang tim tinh nguyen cua mot so");
+    case 1:{
+        printf("kiem tra so nguyen dang thuc hien\n");
     }
-    else if (menu == 2)
-    {
-        printf("2. Chuc nang tim UCLN va BCNN");
+        break;
+    case 2:{
+        printf("tim uoc so chung boi so chung 2 so dang thuc hien\n");
     }
-    else if (menu == 3)
-    {
-        printf("3. Chuc nang tinh tien Karaoke");
+        break;
+    case 3:{
+        printf("tinh tien cho quan karaoke dang thuc hien\n");
     }
-    else if (menu == 4)
-    {
-        printf("4. Chuc nang tinh tien dien");
+        break;
+    case 4:{
+        printf("chuc nang tinh tien dien dang thuc hien \n");
     }
-    else if(menu == 5)
-    {
-        printf("5. Chuc nang doi tien ");
+        break;
+    case 5:{
+        printf("chuc nang quy doi tien dang thuc hien");
     }
-    else if(menu == 6)
-    {
-        printf("6. Chuc nang tinh lai suat vay ngan hang tra gop ");
+        break;
+    case 6:{
+        printf("tinh lai suat vay ngan hang dang thuc hien\n");
     }
-    else if(menu == 7)
-    {
-        printf("7. Chuc nang vay tien mua xe ");
+        break;
+    case 7:{
+        printf("chuc nang vay tien mua xe dang thuc hien \n");
     }
-    else if(menu == 8)
-    {
-        printf("8. Chuc nang sap xep thong tin sinh vien");
+        break;
+    case 8:{
+        printf("chuc nang sap xep thong sinh vien dang thuc hien \n");
     }
-    else if(menu == 9)
-    {
-        printf("9. Chuc nang xay dung game FPOLY-LOTT ");
+        break;
+    case 9:{
+        printf("chuc nang xay dung game fpoly-lott\n");
     }
-    else if(menu == 10)
-    {
-        printf("10. Chuc nang xay dung truong trinh tinh toan phan so ");
+        break;
+    case 10:{
+        printf("chuc nang xay dung chuong trinh tinh phan so dang thuc hien\n");
     }
-    else
-    {
-        printf("co 10 so mu ha");
+        break;
+    case 0:{
+        printf("see u again sir/ms\n");
+        exit(0);
+    }
+        break;
+    default:
+     printf("Vui long chon lai lua chon co san");
+        break;
     }
     return 0;
 }
